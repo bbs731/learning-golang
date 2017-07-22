@@ -25,6 +25,9 @@ func main() {
 	fmt.Println("First element")
 	fmt.Println(values[0][0])
 
+	values = append(values, make([]int, 0))
+	values[2] = append(values[2], 7)
+	values[2] = append(values[2], 8, 9)
 	// Display entire slice.
 	fmt.Println("Values")
 	fmt.Println(values)
